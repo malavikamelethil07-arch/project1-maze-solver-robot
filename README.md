@@ -78,8 +78,7 @@ END
 ![Robot](images/robot.jpg)
 
 ## 🎥 Demo Video
-[Click here to watch](your-video-link)
-
+[Click here to watch](https://github.com/user-attachments/assets/2685f03d-c145-40f2-8f69-ea68caa55ef4)
 ## 🚀How to Run
   1. Upload the code to Arduino
 2. Connect all components
