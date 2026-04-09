@@ -34,6 +34,7 @@ It is a beginner friendly level robotics project and helps in understanding prac
 - Motor IN3 → Pin 6  
 - Motor IN4 → Pin 7  
 <img src="https://github.com/user-attachments/assets/95f24ab0-8a96-4897-8a97-6f35dc1bbf86" width="300">
+
 ## ⚙️ Working Principle
 The ultrasonic sensor measures distance. If an obstacle is detected within a threshold, the robot stops and changes direction using motors controlled via the motor driver.
 ## 💻 Code
@@ -43,7 +44,7 @@ Code is available in the `code/` folder.However the psuedo code is as given:
 // sample snippet
 START
 
-Initialize motors
+Initialize  
 Initialize ultrasonic sensor
 
 LOOP forever:
