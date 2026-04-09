@@ -33,7 +33,7 @@ It is a beginner friendly level robotics project and helps in understanding prac
 - Motor IN2 → Pin 9  
 - Motor IN3 → Pin 6  
 - Motor IN4 → Pin 7  
-![Circuit Diagram](images/circuit.png)
+![Circuit Diagram](https://github.com/user-attachments/assets/95f24ab0-8a96-4897-8a97-6f35dc1bbf86)
 ## ⚙️ Working Principle
 The ultrasonic sensor measures distance. If an obstacle is detected within a threshold, the robot stops and changes direction using motors controlled via the motor driver.
 ## 💻 Code
