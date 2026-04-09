@@ -38,7 +38,7 @@ It is a beginner friendly level robotics project and helps in understanding prac
 ## ⚙️ Working Principle
 The ultrasonic sensor measures distance. If an obstacle is detected within a threshold, the robot stops and changes direction using motors controlled via the motor driver.
 ## 💻 Code
-Code is available in the `code/` folder.However the psuedo code is as given:
+[Click here to view code](mazesolver.cpp).However the psuedo code is as given:
 
 ```cpp
 // sample snippet
