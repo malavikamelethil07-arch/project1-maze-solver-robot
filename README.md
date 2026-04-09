@@ -75,7 +75,7 @@ END
 
 ## 📸 Project Images
 
-![Robot](images/robot.jpg)
+![Robot](https://github.com/malavikamelethil07-arch/project1-maze-solver-robot/blob/00dd8a6efa14dded02fbaefb61cfef4febf2dbe1/finalmaze.jpeg)
 
 ## 🎥 Demo Video
 [Click here to watch](https://github.com/user-attachments/assets/2685f03d-c145-40f2-8f69-ea68caa55ef4)
