@@ -1,28 +1,102 @@
-# project1-maze-solver-robot
-My first hardware hands-on project on embedded systems
-![image alt](https://github.com/malavikamelethil07-arch/project1-maze-solver-robot/blob/7ca04d69527921726575f4d7da367283eb3aef15/WhatsApp%20Image%202026-04-09%20at%2008.53.44.jpeg)
-FEATURES
+# 🚗 Obstacle Avoidance Robot
+## 📌 Description
+This project is an Arduino-based obstacle avoidance robot that uses an ultrasonic sensor to detect obstacles and automatically change direction to avoid collisions.
+
+The maze solver robot is an excellent autonomous robotic system designed to navigate through maze,identify obstacles and change routee if any with the help of ultrasonic sensor and arduino uno.
+It is a beginner friendly level robotics project and helps in understanding practical applications of autonomous navigation systems, which are widely used in self-driven cars,and rescue operations where it is difficult for humans to get into.
+
+
+## 🧰 Components Required--Hardware
+
+| Component | Quantity |
+|----------|----------|
+| Arduino Uno 🟦 | 1 |
+| Ultrasonic Sensor 📡 | 1 |
+| Servo Motor 🔄 | 1 |
+| Motor Driver 🚗 | 1 |
+| DC Motors ⚙️ | 2 |
+| Battery pack🔋 | 1 |
+
+## Software required:
+
+| | 🧩 Software            | 🔍 Purpose                    |
+| ------ | ---------------------- | ----------------------------- |
+| 1      | Arduino IDE 🟦         | Writing & uploading code      |
+| 2      | VS Code 🖥️            | Code editing (optional)       |
+| 3      |  Tinkercad 🔬 | Circuit simulation (optional) |
+| 4      | Serial Monitor 📡      | Debugging output              |
+## 🔌 Circuit Connections
+
+-  Trig → Pin 4  
+- Echo → Pin 5  
+- Motor IN1 → Pin 8  
+- Motor IN2 → Pin 9  
+- Motor IN3 → Pin 6  
+- Motor IN4 → Pin 7  
+![Circuit Diagram](images/circuit.png)
+## ⚙️ Working Principle
+The ultrasonic sensor measures distance. If an obstacle is detected within a threshold, the robot stops and changes direction using motors controlled via the motor driver.
+## 💻 Code
+Code is available in the `code/` folder.However the psuedo code is as given:
+
+```cpp
+// sample snippet
 START
-  ↓
-Setup components
-  ↓
-Measure distance
-  ↓
-Is distance > 10 cm?
-  ├── YES → Move Forward
-  │         ↓
-  │       Repeat
-  │
-  └── NO → Stop
-            ↓
-        Move Backward
-            ↓
-        Scan Right & Left
-            ↓
-        Compare distances
-            ↓
-     Turn towards larger space
-            ↓
-        Center Servo
-            ↓
-          Repeat
+
+Initialize motors
+Initialize ultrasonic sensor
+
+LOOP forever:
+    Measure distance using sensor
+    
+    IF distance < threshold THEN
+        Stop robot
+        Turn servo to right
+        Measure right distance
+        
+        Turn servo to left
+        Measure left distance
+        
+        IF right distance > left distance THEN
+            Turn robot right
+        ELSE
+            Turn robot left
+        ENDIF
+        
+    ELSE
+        Move forward
+    ENDIF
+
+END LOOP
+
+END
+```
+---
+
+## 📸 Project Images
+
+![Robot](images/robot.jpg)
+
+## 🎥 Demo Video
+[Click here to watch](your-video-link)
+
+## 🚀How to Run
+  1. Upload the code to Arduino
+2. Connect all components
+3. Power the circuit
+4. Place robot on surface
+## 📚 What I Learned
+- Arduino programming
+- Sensor integration
+- Motor control
+- Debugging hardware issues, stimulation tools
+- Version control using github and github basics
+## 🔮 Future Improvements
+- Add Bluetooth control
+- Improve obstacle detection accuracy
+- Add camera module
+## 👩‍💻 Author
+ **Malavika**-
+ Btech student in Electronics and communication
+
+
